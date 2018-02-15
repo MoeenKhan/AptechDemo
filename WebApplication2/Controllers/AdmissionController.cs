@@ -10,9 +10,17 @@ namespace WebApplication2.Controllers
     {
         //
         // GET: /Admission/
-        public ActionResult Index()
+        
+        public string Index(string name = "Moeen", string batch = "2015-10C")
         {
-            return View();
+
+            return "You got Admission in Batch "+batch+" and your ID is "+123456;
+        }
+
+        public string CancelAdmission(int Id = 123456, string batch = "2015-10C")
+        {
+
+            return "Your Admission in Batch " + batch + " is cancelled";
         }
 	}
 }

@@ -12,8 +12,7 @@ namespace WebApplication2.Controllers
         // GET: /Home/
         public ActionResult Index()
         {
-            Response.Write("<script>prompt('Please enter your name', 'Harry Potter')</script>");
-            return null;
+            return View();
         }
 	}
 }

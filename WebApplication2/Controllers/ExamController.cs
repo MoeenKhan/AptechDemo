@@ -10,9 +10,21 @@ namespace WebApplication2.Controllers
     {
         //
         // GET: /Exam/
-        public ActionResult Index(int Id)
+
+        public string Index(int Id = 123456, string batch = "2015-10C")
         {
-            return null;
+            int Attend = 80;
+            int ReqAttend = 75;
+            if(Attend > ReqAttend)
+                return "Your Exam is scheduled";
+            else
+                return "Your Exam isn't scheduled";
+        }
+
+        public string ScheduleExam(int Id = 123456, string batch = "2015-10C")
+        {
+
+            return "Your Exam has been Scheduled";
         }
 	}
 }
